@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 class BaseGeometry:
+  """implements the class BaseGeometry"""
   def area(self):
+    """defines the area using the function"""
     raise Exception("araea() is not implemented")
   
   def integer_validator(self, name, value):

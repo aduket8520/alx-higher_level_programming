@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 class BaseGeometry:
+    """defines a class called BaseGeometyr"""
     def area(self):
+        """function defines the area"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
@@ -11,6 +13,7 @@ class BaseGeometry:
             raise ValueError(f"{name} must be greater than 0")
 
 class Rectangle(BaseGeometry):
+    """a subclass inherited from main class"""
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
@@ -18,6 +21,7 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", self.__height)
 
     def area(self):
+        """Returns the area of the rectangle"""
         return self.__width * self.__height
 
     def __str__(self):
