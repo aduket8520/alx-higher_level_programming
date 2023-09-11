@@ -7,6 +7,6 @@ def lookup(obj):
 
     """ Use dir() to get a list of attributes and methods"""
     attributes_and_methods = dir(obj)
-    
+
     """this shows what the function returns"""
     return attributes_and_methods
